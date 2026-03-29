@@ -61,7 +61,6 @@ function buscarCEP() {
         });
 }
 
-// ESPERA O DOM CARREGAR (AQUI ESTÁ A CORREÇÃO)
 document.addEventListener("DOMContentLoaded", function () {
 
     // ENTER NO INPUT
