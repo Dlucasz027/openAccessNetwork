@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pythonlink</title>
+    <link rel="stylesheet" href="../static/css/global.css">
+    <link rel="stylesheet" href="../static/css/theme.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body data-empresa="PythonLink">
+    
+    <h1></h1>
+    <h2>Coverage Areas Map</h2>
+
+    <p>Enter a ZIP code to locate on the map (no dashes or dots):</p>
+    
+    <input type="text" id="cep" placeholder="Enter the ZIP code">
+    <button onclick="buscarCEP()">Search</button>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="../static/js/enterprises.js"></script>
+
+    <div id="notification" class="hidden"></div>
+
+    <h3>Areas where we already have customers on this neutral network</h3>
+    <div class="local">
+        <p>Jardim Carapina (ZIP code: 29161-490)</p>
+        <p>Jardim Tropical (ZIP code: 29165-050)</p>
+        <p>Carapina Grande (ZIP code: 29162-661)</p>
+        <p>Central Carapina (ZIP code: 29161-536)</p>
+        <p>Boa Vista (ZIP code: 29161-900)</p>
+        <p>Novo Horizonte (ZIP code: 29163-317)</p>
+        <p>Cantinho do Céu (ZIP code: 29162-661)</p>
+    </div>
+</body>
+</html>

@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .h1 {
     width: 100%;
     text-align: center;
@@ -10,24 +11,23 @@
     font-size: 34px;
     color: #161b22;
     margin-bottom: 5px;
-    line-height: 1.5;  /* Ajuste no line-height para o alinhamento */
+    line-height: 1.5;  
 }
 
 a {
-    display: inline-block; /* Faz o link se comportar como um elemento inline */
+    display: inline-block; 
     text-align: center;
     font-size: 20px;
     color: #999;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
-    margin-left: 5px; /* Adiciona um pequeno espaçamento entre o título e o link */
+    margin-left: 5px; 
 }
 
 a:hover {
     color: #ff3c00;
 }
-
 
 body {
     font-family: Arial, sans-serif;
@@ -91,65 +91,58 @@ body {
     color: #eeff00;
 }
 
-
-@media (max-width: 768px) { /*media query ativa quando a largura da tela é igual ou menor que 768px*/
-    .container { /*afeta o "conteiner" classe dos botões*/
-        grid-template-columns: repeat(2, minmax(150px, 1fr)); /* Define um tamanho mínimo */
-        gap: 15px; /*espaçamento mínimo entre os botões*/
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        gap: 15px;
     }
 }
 
-@media (max-width: 480px) { /*media query ativa quando a tela tem 480px ou menos (celulares pequenos)*/
+@media (max-width: 480px) {
     .container {
-        grid-template-columns: repeat(2, minmax(150px, 1fr)); /* Aumenta largura mínima */
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
         gap: 10px;
     }
 
     .button {
-        height: 130px; /* Aumenta a altura dos botões */
-        font-size: 16px; /* Aumenta um pouco o texto */
+        height: 130px;
+        font-size: 16px;
     }
 }
 
-
-
-/* Estilos BTN dark mode */
 body {
     background-color: white;
     color: black;
 }
 
-/* Estilos para o modo escuro */
 .dark-mode {
     background-color: #121212;
     color: white;
 }
 
-/* Estilizando o botão de dark mode */
 #toggle-theme {
     position: fixed;
     top: 2px;
     right: 10px;
-    padding: 0; /* Remove o padding */
-    border: none; /* Remove a borda */
-    background: none; /* Remove o fundo */
-    color: white; /* Cor do ícone */
-    font-size: 40px; /* Tamanho do ícone */
-    cursor: pointer; /* Mantém o cursor como pointer */
-    transition: opacity 0.3s ease; /* Transição suave */
-    width: 40px; /* Tamanho fixo para o ícone */
-    height: 40px; /* Tamanho fixo para o ícone */
-    display: flex; /* Usa flexbox para centralizar o ícone */
-    justify-content: center; /* Alinha o ícone no centro horizontal */
-    align-items: center; /* Alinha o ícone no centro vertical */
-    opacity: 0.5; /* Torna o botão levemente transparente */
+    padding: 0;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
 }
 
 #toggle-theme:hover {
-    opacity: 1; /* Aumenta a opacidade ao passar o mouse */
+    opacity: 1;
 }
 
-/* No estado ativo */
 #toggle-theme:active {
-    opacity: 0.7; /* Reduz a opacidade quando clicado */
+    opacity: 0.7;
 }

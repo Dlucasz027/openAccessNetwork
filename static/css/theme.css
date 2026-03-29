@@ -1,0 +1,53 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+#toggle-theme {
+    position: fixed;
+    top: 2px;
+    right: 10px;
+    padding: 0;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+}
+
+#toggle-theme:hover {
+    opacity: 1;
+}
+
+#toggle-theme:active {
+    opacity: 0.7;
+}
+
+/* RESPONSIVO DO BOTÃO */
+@media (max-width: 768px) {
+    #toggle-theme {
+        font-size: 35px;
+        top: 5px;
+        right: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    #toggle-theme {
+        font-size: 35px;
+        top: 3px;
+        right: 3px;
+    }
+}
